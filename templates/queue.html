@@ -20,7 +20,7 @@
           }
 
           td, th {
-             padding: 0px 35px; 
+             padding: 0px 5px;
              text-align: center;
           }
         </style>
@@ -42,9 +42,15 @@
             {% for song in queues %}
             <table bgcolor="#FFFFFF">
                <tr>
+<<<<<<< HEAD
                  <th>{{song.song}}</th>
                  <th>{{song.artist}}</th>
                  <th>{{song.album}}</th>
+=======
+                 <th>{{song.song[:6]}}.. |</th>
+                 <th>{{song.artist[:6]}}.. |</th>
+                 <th>{{song.album[:6]}}..</th>
+>>>>>>> parent of 6e5bbd7... update 8
                </tr>
               </table>
               {% endfor %}
