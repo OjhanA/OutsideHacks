@@ -3,7 +3,13 @@ import jwcrypto
 from flask import Flask, render_template
 app = Flask(__name__)
 
-
+queues = [
+    {
+    "song" : "Despacito",
+    "artist": "Luis Fonsi",
+    "album": "Despacito"
+    }
+]
 
 @app.route("/search")
 def search():
@@ -11,20 +17,9 @@ def search():
 
 @app.route("/queue")
 def hello():
-    queues = [
-    {
-    "song" : "Despacito",
-    "artist": "Luis Fonsi",
-    "album": "Despacito"
-    } ,
-    {
-    "song" : "Despacito 2",
-    "artist": "Luis Fonsi",
-    "album": "Despacito 2"
-    } ,
-
-]
-    return render_template('queue.html', queuesList = queues)
+    # for x in range(1):
+    #     queues[x] = getSong()
+    return render_template('queue.html')
 
 @app.route("/stats")
 def stats():
@@ -39,9 +34,6 @@ def getSong():
     artist = "Kodak Black"
     album = "Instituition"
     return {"song": song , "artist": artist , "album": album}
-
-def getQueue():
-    return queues
 
 
 if __name__ == '__main__':
