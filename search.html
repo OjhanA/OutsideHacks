@@ -1,89 +1,60 @@
 <!DOCTYPE html>
 <html>
-    <body>
-            
-            <style>
-                    .base {
-                      height: 400px;
-                      width: 296.45px;
-                      background-color: rgb(15, 15, 15);
-                    }
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-                    .u2 {
-                      height: 20px;
-                      width: 250px;
-                      background-color: white;
-                      position: fixed;
-                      top: 70px;
-                      left: 30px;
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-                    }
+  <body>
+      <style>  
+        .background {
+            height: 400px;
+            width: 320px;
+            background-color: black;
+          }
+        
+        
+          
 
-                    .u3 {
-                      height: 20px;
-                      width: 150px;
-                      background-color: white;
-                      position: fixed;
-                      top: 110px;
-                      left: 73px;
-                    }
-                    .u3 a{
-                        display: block;
-                        text-align: center;
-                    }
-                    
-                    ul {
-                        list-style-type: none;
-                        margin: 0;
-                        padding: 0;
-                        overflow: hidden;
-                        background-color: black;
-                        width: 296.45px;
-                        position: fixed;
-                        top: 0;
-                    }
 
-                    li {
-                        float: left;
-                    }
 
-                    li a {
-                        display: block;
-                        color: white;
-                        text-align: center;
-                        padding: 14px 30px;
-                    }
 
-                    li a:hover:not(.active) {
-                        background-color: green;
-                    }
-                    .active{
-                        background-color: green;
-                    }
+        </style>
 
-                    
-            </style>
-            <div class="base"></div>
-            <ul>
-                    <li><a class="active" href="search.html">Search</a></li>
-                    <li><a href="queue.html">Queue</a></li>
-                    <li><a href="stats.html">Stats</a></li>
-            </ul>
-            
-            <div class="u2">Search Bar</div>
-            <div class="u3">
-                <a>Request</a>
-            </div>
+    <div class="background">
+            <nav class="nav-extended">
+                      <ul class="tabs tabs-transparent grey">
+                        <li class="tab green"><a href="search.html">Search</a></li>
+                        <li class="tab"><a href="queue.html">Queue</a></li>
+                        <li class="tab"><a href="stats.html">Stats</a></li>
+                      </ul>
+                 </nav>
 
-            <!-- How to call the variable:
-            <p id="songName"></p> -->
-           
-           
-           <script>
-                    var songName = "Song Name";
-                    document.getElementById("songName").innerHTML = songName;
-                    
-                    
-                </script>
-    </body>
+                 <nav>
+                        <div class="nav-wrapper">
+                          <form>
+                            <div class="input-field">
+                              <input id="search" type="search" required>
+                              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                              <i class="material-icons">close</i>
+                            </div>
+                          </form>
+                        </div>
+                      </nav>
+
+
+    </div>
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+
 </html>

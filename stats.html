@@ -1,48 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <body>
-            <style>
-                    .base {
-                      height: 400px;
-                      width: 296.45px;
-                      background-color: rgb(15, 15, 15);
-                    }
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-                    ul {
-                         list-style-type: none;
-                        margin: 0;
-                        padding: 0;
-                        overflow: hidden;
-                        background-color: black;
-                        width: 296.45px;
-                        position: fixed;
-                        top: 0;
-                        }
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
 
-                    li {
-                        float: left;
-                    }
+  <body>
+      <style>  
+        .background {
+            height: 400px;
+            width: 320px;
+            background-color: black;
+          }
+        
+        
+          
 
-                    li a {
-                        display: block;
-                        color: white;
-                        text-align: center;
-                        padding: 14px 30px;
-                    }
 
-                    li a:hover:not(.active) {
-                        background-color: green;
-                    }
-                    .active{
-                        background-color: green;
-                    }
-            </style>
-            <div class="base"></div>
-            <ul>
-                    <li><a href="search.html">Search</a></li>
-                    <li><a href="queue.html">Queue</a></li>
-                    <li><a class="active" href="stats.html">Stats</a></li>
-            </ul>
 
-    </body>
+
+        </style>
+
+    <div class="background">
+
+
+        
+            <nav class="nav-extended">
+                      <ul class="tabs tabs-transparent grey">
+                        <li class="tab"><a href="search.html">Search</a></li>
+                        <li class="tab"><a href="queue.html">Queue</a></li>
+                        <li class="tab green"><a href="stats.html">Stats</a></li>
+                      </ul>
+                 </nav>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
+
 </html>
