@@ -11,18 +11,12 @@
   </head>
 
   <body>
-      <style>  
+      <style>
         .background {
             height: 400px;
             width: 320px;
             background-color: black;
           }
-        
-        
-          
-
-
-
 
         </style>
 
@@ -34,6 +28,21 @@
                         <li class="tab"><a href="stats.html">Stats</a></li>
                       </ul>
                  </nav>
+      <ul class="city center">
+          <u style="color:white;">Previous</u>
+         <li class="list-group-item" style="color:white;"><var id="song"></var>, <var id="artist"></var>, <var id="album"></var></li>
+         <br>
+         <br>
+         <u style="color:white;">Current</u>
+         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+         <br>
+         <br>
+         <u style="color:white;">Next</u>
+         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+       </ul>
 
     </div>
 
@@ -45,6 +54,14 @@
 
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      var song;
+    document.getElementById("song").innerHTML = song;
+    var artist;
+    document.getElementById("artist").innerHTML = artist;
+    var album;
+    document.getElementById("album").innerHTML = album;
+    </script>
   </body>
 
 </html>
