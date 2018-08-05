@@ -14,7 +14,7 @@
   <body>
       <style>
         .background {
-         s     height: 400px;
+            height: 400px;
             width: 320px;
             background-color: black;
           }
@@ -39,25 +39,15 @@
           <div class="container">
 
            <section class="home center">
+            {% for song in queues %}
             <table bgcolor="#FFFFFF">
                <tr>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                 <th>Song</th>
-                 <th>Song</th>
-                 <th>Song</th>
-=======
                  <th>{{song.song}}</th>
                  <th>{{song.artist}}</th>
                  <th>{{song.album}}</th>
->>>>>>> parent of 49ba427... qorking queue
-=======
-                 <th><var id="song"></var></th>
-                 <th><var id="artist"></var></th>
-                 <th><var id="album"></var></th>
->>>>>>> parent of 420a5e8... Broken sonf fetching
                </tr>
               </table>
+              {% endfor %}
               <table bgcolor="#000000">
                   <tr>
                     <th> Sample</th>
