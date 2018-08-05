@@ -4,7 +4,7 @@
             <style>
                     .base {
                       height: 400px;
-                      width: 300px;
+                      width: 296.45px;
                       background-color: rgb(15, 15, 15);
                     }
 
@@ -14,7 +14,7 @@
                         padding: 0;
                         overflow: hidden;
                         background-color: black;
-                        width: 300px;
+                        width: 296.45px;
                         position: fixed;
                         top: 0;
                         }
@@ -30,15 +30,18 @@
                         padding: 14px 30px;
                     }
 
-                    li a:hover {
+                    li a:hover:not(.active) {
+                        background-color: green;
+                    }
+                    .active{
                         background-color: green;
                     }
             </style>
             <div class="base"></div>
             <ul>
-                    <li><a class="active" href="search.html">Search</a></li>
-                    <li><a href="#queue">Queue</a></li>
-                    <li><a href="#stats">Stats</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a class="active" href="queue.html">Queue</a></li>
+                    <li><a href="stats.html">Stats</a></li>
             </ul>
 
     </body>
