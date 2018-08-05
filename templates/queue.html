@@ -19,6 +19,10 @@
             background-color: black;
           }
 
+          td, th {
+             padding: 0px 5px;
+             text-align: center;
+          }
         </style>
 
     <div class="background">
@@ -31,21 +35,64 @@
                  </nav>
       <ul class="city center">
           <u style="color:white;">Previous</u>
-         <li class="list-group-item" style="color:white;"><var id="song"></var>, <var id="artist"></var>, <var id="album"></var></li>
-         <br>
+
+          <div class="container">
+
+           <section class="home center">
+            <table bgcolor="#FFFFFF">
+               <tr>
+                 <th><var id="song"></var></th>
+                 <th><var id="artist"></var></th>
+                 <th><var id="album"></var></th>
+               </tr>
+              </table>
+              <table bgcolor="#000000">
+                  <tr>
+                    <th> Sample</th>
+                    <th> Sample </th>
+                    <th> Sample </th>
+                  </tr>
+                 </table>
+     
+               </section>
+
+
          <br>
          <u style="color:white;">Current</u>
-         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
-         <br>
+            <table bgcolor="#FFFFFF">
+               <tr>
+                 <th>Song</th>
+                 <th>Artist</th>
+                 <th>Album</th>
+               </tr>
+              </table>
+              <table bgcolor="#000000">
+                  <tr>
+                    <th> Sample</th>
+                    <th> Sample </th>
+                    <th> Sample </th>
+                  </tr>
+                 </table>        
          <br>
          <u style="color:white;">Next</u>
-         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
-         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
-         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
-         <li class="list-group-item" style="color:white;">Song Name, Artist, Album</li>
+         <u style="color:white;">Current</u>
+         <table bgcolor="#FFFFFF">
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+              <th>Album</th>
+            </tr>
+           </table>
+           <table bgcolor="#000000">
+               <tr>
+                 <th> Sample</th>
+                 <th> Sample </th>
+                 <th> Sample </th>
+               </tr>
+              </table>   
        </ul>
        <div class="btn black" style="position:absolute; left: 0px; top:360px"><a href="tag">close</a></div>
-
+      </div>
     </div>
 
 
