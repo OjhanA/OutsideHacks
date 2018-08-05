@@ -39,12 +39,12 @@
           <div class="container">
 
            <section class="home center">
-             {% for song in queue %}
+             {% for song in queuesList %}
             <table bgcolor="#FFFFFF">
                <tr>
-                 <th>{{song.song}}</th>
-                 <th>{{song.artist}}</th>
-                 <th>{{song.album}}</th>
+                 <th>{{song.song[:6]}}.. |</th>
+                 <th>{{song.artist[:6]}}.. |</th>
+                 <th>{{song.album[:6]}}..</th>
                </tr>
               </table>
               {% endfor %}
