@@ -25,6 +25,10 @@ def hello():
 def stats():
     return render_template('stats.html')
 
+@app.route("/tag")
+def tag():
+    return render_template('tag.html')
+
 def getSong():
     song = "Like Dat"
     artist = "Kodak Black"
