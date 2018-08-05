@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
 <html>
     <body>
             <style>
@@ -7,6 +8,7 @@
                       width: 300px;
                       background-color: rgb(15, 15, 15);
                     }
+                    
 
                     ul {
                          list-style-type: none;
@@ -33,13 +35,27 @@
                     li a:hover {
                         background-color: green;
                     }
+
+                    p{
+                        color: white;
+                        position: fixed;
+                        top: 50px;
+                    }
             </style>
-            <div class="base"></div>
+            <div class="base">
+
+
+            </div>
+            {% for song in queue %}
+            <h1>{{song.song}}</h1>
+            <p>{{song.artist}}</p>
+            <p>{{song.album}}</p>
+            {% endfor %}
             <ul>
                     <li><a class="active" href="#search">Search</a></li>
                     <li><a href="#queue">Queue</a></li>
                     <li><a href="#stats">Stats</a></li>
             </ul>
-
+        
     </body>
 </html>
