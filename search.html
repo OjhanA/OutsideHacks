@@ -9,8 +9,31 @@
                       background-color: rgb(15, 15, 15);
                     }
 
+                    .u2 {
+                      height: 20px;
+                      width: 250px;
+                      background-color: white;
+                      position: fixed;
+                      top: 70px;
+                      left: 30px;
+
+                    }
+
+                    .u3 {
+                      height: 20px;
+                      width: 150px;
+                      background-color: white;
+                      position: fixed;
+                      top: 110px;
+                      left: 73px;
+                    }
+                    .u3 a{
+                        display: block;
+                        text-align: center;
+                    }
+                    
                     ul {
-                         list-style-type: none;
+                        list-style-type: none;
                         margin: 0;
                         padding: 0;
                         overflow: hidden;
@@ -18,7 +41,7 @@
                         width: 296.45px;
                         position: fixed;
                         top: 0;
-                        }
+                    }
 
                     li {
                         float: left;
@@ -37,6 +60,8 @@
                     .active{
                         background-color: green;
                     }
+
+                    
             </style>
             <div class="base"></div>
             <ul>
@@ -44,11 +69,18 @@
                     <li><a href="queue.html">Queue</a></li>
                     <li><a href="stats.html">Stats</a></li>
             </ul>
-            <p id="songName"></p>
+            
+            <div class="u2">Search Bar</div>
+            <div class="u3">
+                <a>Request</a>
+            </div>
+
+            <!-- How to call the variable:
+            <p id="songName"></p> -->
            
            
            <script>
-                    var songName = "default";
+                    var songName = "Song Name";
                     document.getElementById("songName").innerHTML = songName;
                     
                     
